@@ -1,0 +1,29 @@
+.header-wrapper{
+    width: 100%;
+    height: 150px;
+    background-color: #9400D3;
+    position: fixed;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    ;
+ 
+    
+
+}
+.body{
+    height: 150px;
+}
+.imG{
+    height: 150px;
+    width: 150px;
+    background-color: #9400D3;
+
+}
+
+
+
+
+
+
