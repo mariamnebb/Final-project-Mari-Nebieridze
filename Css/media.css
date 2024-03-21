@@ -1,1 +1,16 @@
+@media (max-width:480px) {
+    .burgerbar {
+        display: block;
+
+    }
+    .sign {
+        display: none;
+        flex-direction: column;
+    }
+    .sign.activen{
+        display: block;
+
+    }
+}
+    
 

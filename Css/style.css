@@ -7,7 +7,7 @@
     top: 0;
     left: 0;
     z-index: 100;
-    ;
+    position: relative;
 
 }
 .body{
@@ -37,6 +37,34 @@
     left: 250px;
     color: white;
     font-family: "BPG Mikheil Stefane", sans-serif;
+}
+.sign{
+    width: 150px;
+    height: 50px;
+    background-color: #ffbf00;
+    position: absolute;
+    top: 20px;
+    right:30px;
+    font-family: "BPG Mikheil Stefane", sans-serif;
+    font-size: 25px;
+    padding-top: 10px;
+    padding-left: 10px;
+    border-radius: 10px;
+    
+}
+.sign-activen{
+    display: block;
+}
+.aa{
+    color: white;
+}
+.burgerbar{
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    font-size: 30px;
+    color: #ffbf00;
+    display: none;
 }
 /* div-zero */
 .div-zero{
@@ -89,8 +117,8 @@ color: #003366;
 }
 .div-photo{
     position: absolute;
-    top: 0px;
-    left: 20px;
+    top: 10px;
+    left: 10px;
 }
 .div-link{
     position: absolute;
