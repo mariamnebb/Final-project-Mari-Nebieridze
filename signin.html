@@ -21,8 +21,49 @@
             <p class="p-centre">მსჯავრდებულ ქალთა რესოციალიზაციის ცენტრი</p>
         </a>
         </div>
-         <!--  აქ უნდა ჩავსვა ბურგერ ბარი . შესვლის ღილაკი -->
+        <div class="sign">
+            <a class="aa"  href="#">ავტორიზაცია</a>
+        </div>
+        <div class="burgerbar" id="burger-bar">
+            <i class="fa-solid fa-bars-progress"></i>
+        </div>
     </Header>
+    <section>
+        <!-- <div class="sign-in">
+            
+        </div> -->
+        
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">შესვლა</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="images/avatar-svgrepo-com.svg" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b class="p-2service">მომხმარებლის სახელი</b></label>
+      <input type="text" placeholder="შეიყვანეთ მომხმარებლის სახელი" name="uname" required>
+
+      <label for="psw"><b class="p-2service">პაროლი</b></label>
+      <input type="password" placeholder="შეიყვანეთ პაროლი" name="psw" required>
+        
+      <button class="btn" type="submit">შესვლა</button>
+      <label>
+       
+      </label>
+    </div>
+
+    
+      
+    </div>
+  </form>
+</div>
+
+    </section>
     
 </body>
 </html>
