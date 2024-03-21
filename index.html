@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>res-women</title>
     <link rel="icon" href="images/women-talk-show-svgrepo-com (1).svg">
+   
     <link rel="stylesheet" href="Css/reset.css">
     <link rel="stylesheet" href="Css/style.css">
     <link rel="stylesheet" href="Css/media.css">
@@ -120,20 +121,27 @@
     <p class="p-2service"> რეგისტრაციის გასავლელად გთხოვთ შეავსოთ აუცილებელი ველები.</p>
     <hr>
 
-    <label for="სახელი"><b class="p-2service">მომხმარებლის სახელი</b></label>
-    <input type="text" placeholder="შეიყვანეთ სახელი" name="name" id="name" required>
+    <label for="სახელი"><b class="p-2service">მომხმარებლის სახელი და გვარი</b></label>
+    <input type="text" placeholder="შეიყვანეთ სახელი და გვარი" name="name" id="name" required>
 
-    <label for="psw"><b class="p-2service">მომხმარებლის გვარი</b></label>
-    <input type="password" placeholder="შეიყვანეთ გვარი" name="lastn" id="lastn" required>
+    <label for="psw"><b class="p-2service">მომხმარებლის მეილი </b></label>
+    <input type="password" placeholder="შეიყვანეთ მომხმარებლის მეილი" name="lastn" id="lastn" required>
 
     <label for="მომხმარებლის ტელეფონის ნომერი"><b class="p-2service">მომხმარებლის ტელეფონის ნომერი</b></label>
     <input type="number" placeholder="+995 5** ** ** **" name="nub" id="nub" required>
-    <hr>
-    
 
-    <button  type="გაგზავნა" class="registerbtn">გაგზავნა</button>
+   
+   <label for="პაროლი"><b class="p-2service"></b></label>
+    <input type="password" placeholder="შეიყვანეთ პაროლი" name="password" id="password" required>
+
+    <hr>
+    <button id="clicbtn">გაგზავნა</button>
+
+    <!-- <button  type="გაგზავნა" class="registerbtn">გაგზავნა</button> -->
   </div>
-  
+  <div class="container signin">
+    <p class="p-2service pp">უკვე გაქვთ ანგარიში? <a href="signin.html">შესვლა</a>.</p>
+  </div>
   
 </form>
 

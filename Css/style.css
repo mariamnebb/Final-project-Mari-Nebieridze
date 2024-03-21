@@ -347,7 +347,7 @@ font-family: "BPG Mikheil Stefane", sans-serif;}
     background-image: url(https://previews.123rf.com/images/mazirama/mazirama1503/mazirama150300574/38103124-registration-concept-with-interface-and-world-map-on-blue-background.jpg);
     margin-bottom: 10px;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;}
     .container {
   padding: 16px;
   background-color: white;
@@ -357,7 +357,7 @@ font-family: "BPG Mikheil Stefane", sans-serif;}
 input[type=text], input[type=password] {
   width: 100%;
   padding: 15px;
-  margin: 41px 0 22px 0;
+  margin: 15px 0 22px 0;
   display: inline-block;
   border: none;
   background: #f1f1f1;
@@ -395,15 +395,22 @@ a {
   color: dodgerblue;
 }
 
-/* Set a grey background color and center the text of the "sign in" section */
-.signin {
+
+  .signin {
   background-color: #f1f1f1;
   text-align: center;
 }
-}
-.registerbtn{
+
+#clicbtn{
     font-family: "BPG Mikheil Stefane", sans-serif;
     font-size: 25px;
+    background-color: #003399;
+    width: 100%;
+}
+.pp{
+    font-family: "BPG Mikheil Stefane", sans-serif;
+    font-size: 15px;
+
 }
 /* footer */
 .footer-wrapper{
