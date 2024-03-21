@@ -25,9 +25,9 @@
     <section>
         <div class="div-zero">
             <div class="div-zero1">
-                <div class="div-photo">
+                <!-- <div class="div-photo">
                     <img src="images/news-broadcast-svgrepo-com (2).svg" alt="">
-                </div>
+                </div> -->
                 <div class="div-link">
                     <a href="https://old.tbiliselebi.ge/index.php?newsid=268456191"><img class="svg" src="images/link-square-svgrepo-com.svg" alt=""></a> 
                 </div>
@@ -114,6 +114,29 @@
     </section>
     <section>
         <div class="registration">
+            <form action="/action_page.php">
+  <div class="container">
+    <!-- <h1>დარეგისტრირდი</h1> -->
+    <p class="p-2service"> რეგისტრაციის გასავლელად გთხოვთ შეავსოთ აუცილებელი ველები.</p>
+    <hr>
+
+    <label for="სახელი"><b class="p-2service">მომხმარებლის სახელი</b></label>
+    <input type="text" placeholder="შეიყვანეთ სახელი" name="name" id="name" required>
+
+    <label for="psw"><b class="p-2service">მომხმარებლის გვარი</b></label>
+    <input type="password" placeholder="შეიყვანეთ გვარი" name="lastn" id="lastn" required>
+
+    <label for="მომხმარებლის ტელეფონის ნომერი"><b class="p-2service">მომხმარებლის ტელეფონის ნომერი</b></label>
+    <input type="number" placeholder="+995 5** ** ** **" name="nub" id="nub" required>
+    <hr>
+    
+
+    <button  type="გაგზავნა" class="registerbtn">გაგზავნა</button>
+  </div>
+  
+  
+</form>
+
 
         </div>
     </section>
@@ -146,6 +169,6 @@
       
     
     
-    
+    <script src="script.js"></script>
 </body>
 </html>
