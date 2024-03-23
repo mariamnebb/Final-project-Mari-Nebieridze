@@ -40,9 +40,18 @@
         <div class="burgerbar" id="burger-bar">
             <i class="fa-solid fa-bars-progress"></i>
         </div>
-         <!--  აქ უნდა ჩავსვა ბურგერ ბარი . შესვლის ღილაკი -->
+         <!--  ნავიგაცია-->
+         <nav class="navcl">
+            <ul class="ul-li">
+                <li><a  class="atr" href="#news-section">სიახლეები</a></li>
+                <li><a  class="atr" href="#about-section">შესახებ</a></li>
+                <li><a  class="atr" href="#service-section">სერვისები</a></li>
+                <li><a  class="atr" href="#comments-section">კომენტარები</a></li>
+                
+            </ul>
+         </nav>
     </Header>
-    <section>
+    <section id="news-section">
         <div class="div-zero">
             <div class="div-zero1">
                 <div class="div-photo">
@@ -61,7 +70,7 @@
     </section>
     
     <!-- პირველი სექცია -->
-    <section>
+    <section id="about-section">
         <div class="div-1">
             <div class="div-1-1">
                 <h1 class="h1-about">ორგანიზაციის შესახებ</h1>
@@ -79,7 +88,7 @@
         </div>
     </section>
     <!-- მეორე სექცია -->
-    <section>
+    <section id="service-section">
         
         <div class="div2-box-wrapper">
             <div class="service">
@@ -107,8 +116,8 @@
             </div>
         </div>
     </section>
-    <!-- მესამე სექცია -->
-    <section>
+    <!-- მესამე სექmmცია -->
+    <section id="comments-section">
         <div class="div-3wrapper">
             <div class="div3">
                 <img src="images/work-permit-svgrepo-com.svg" alt="">
@@ -216,8 +225,7 @@
       </section> -->
     
       
-    
-    
+    <script src="./node_modules/moveto/dist/moveTo.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
