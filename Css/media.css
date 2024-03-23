@@ -3,6 +3,9 @@
         display: block;
 
     }
+    .navcl{
+        display: none;
+    }
     .sign {
         display: none;
         flex-direction: column;
@@ -10,6 +13,13 @@
     .sign.activen{
         display: block;
 
+    }
+    .ul-li{
+        flex-direction: column;
+        align-items: center;
+    }
+    .navcl.activeNavcl{
+        display: block;
     }
 }
     

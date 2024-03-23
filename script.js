@@ -7,12 +7,16 @@ btnElement.addEventListener('click', function(){
 })
 
 // burgerbar
+let navcl = document.getElementById('nav-bar');
+let burgerbar = document.getElementById('burger-bar');
 
-// let burger = document.getElementById('burger-bar');
-// burger.addEventListener('click',function(){
-//     burger-bar.classlist.add('sign-activen')
+burgerbar.addEventListener('click',function () {
+  navcl.classList.toggle(".activeNavcl");
+});
 
-// })
+
+
+
 // Get the modal
 let modal = document.getElementById('id01');
 
@@ -162,3 +166,5 @@ email.addEventListener("input", (event) => {
     email.setCustomValidity("");
   }
 });
+
+

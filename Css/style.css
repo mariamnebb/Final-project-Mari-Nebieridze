@@ -59,6 +59,14 @@
 .aa{
   color: white;
 }
+.navigation{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+
+
 .burgerbar{
   position: absolute;
   top: 40px;
@@ -76,6 +84,7 @@
   background-color: #ffbf00;
   padding-left: 0px;
   padding-top: 5px;
+  
   
  
 }
