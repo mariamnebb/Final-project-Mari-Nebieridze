@@ -1,7 +1,8 @@
 "use strict";
-import{linkArray} from "./Move to"
 
-linkArray();
+
+import{email} from "./validation.js"
+email();
 
 
 
@@ -139,33 +140,33 @@ window.onclick = function(event) {
 // });
 //     
 
-//move to (npM)
+// move to (npM)
 
-//   const moveTo = new MoveTo();
-// const linkArray = document.querySelectorAll(".atr");
+  const moveTo = new MoveTo();
+const linkArray = document.querySelectorAll(".atr");
 
 
-// linkArray.forEach((item) => {
-//   item.addEventListener("click", handleClick);
-// });
+linkArray.forEach((item) => {
+  item.addEventListener("click", handleClick);
+});
 
-// function handleClick(e) {
-//   e.preventDefault();
+function handleClick(e) {
+  e.preventDefault();
 
-//   console.log(this); 
-//   const scrollElement = document.querySelector(this.getAttribute("href"));
-//   moveTo.move(scrollElement);
-// }
+  console.log(this); 
+  const scrollElement = document.querySelector(this.getAttribute("href"));
+  moveTo.move(scrollElement);
+}
   
 //   validation
-const email = document.getElementById("mail");
+// const email = document.getElementById("mail");
 
-email.addEventListener("input", (event) => {
-  if (email.validity.typeMismatch) {
-    email.setCustomValidity("I am expecting an email address!");
-  } else {
-    email.setCustomValidity("");
-  }
-});
+// email.addEventListener("input", (event) => {
+//   if (email.validity.typeMismatch) {
+//     email.setCustomValidity("I am expecting an email address!");
+//   } else {
+//     email.setCustomValidity("");
+//   }
+// });
 
 
