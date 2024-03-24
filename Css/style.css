@@ -53,12 +53,12 @@
   border-radius: 10px;
   
 }
-.sign-activen{
+ .sign-activen{
   display: block;
 }
 .aa{
   color: white;
-}
+} 
 .navigation{
   display: flex;
   justify-content: space-between;
@@ -75,7 +75,7 @@
   color: #ffbf00;
   display: none;
 }
-.ul-li{
+.nav-ul{
   display: flex;
   width: 100%;
   height: 30px;
@@ -84,10 +84,10 @@
   background-color: #ffbf00;
   padding-left: 0px;
   padding-top: 5px;
-  
-  
- 
 }
+
+  
+
 .atr{
   font-size: 20px;
   color: white;
@@ -96,7 +96,14 @@
 }
 .atr:hover{
   color: #0080ff;
-}
+} 
+
+
+
+
+
+
+
 
 /* div-zero */
 .div-zero{
@@ -721,3 +728,6 @@ span.psw {
 .overlay-add.overlayActive {
   display: block;
 } */
+
+
+

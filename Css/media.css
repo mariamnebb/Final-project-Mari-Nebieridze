@@ -1,26 +1,131 @@
-@media (max-width:480px) {
-    .burgerbar {
-        display: block;
+/* responsive 1024px; */
 
+@media(max-width:1024px){
+    .two{flex-wrap: wrap;
+        justify-content: center;
     }
-    .navcl{
-        display: none;
+    .sign{
+        display:none;
     }
-    .sign {
-        display: none;
-        flex-direction: column;
+    .p-centre{
+        font-size: 30px;
+        
     }
-    .sign.activen{
-        display: block;
-
+    .div-link{
+        flex-wrap: wrap;
+        justify-content: center;
     }
-    .ul-li{
-        flex-direction: column;
-        align-items: center;
+    .div-photo{
+        width: 100%;
     }
-    .navcl.activeNavcl{
-        display: block;
+    .div-1{
+        width: 100%;
     }
-}
     
+    }
+    .div-zero{
+        height: 800px;
+    }
+    .div2-box-wrapper{
+        flex-wrap: wrap;
+       justify-content: center;
+        
+        
+    }
+    .divbb{
+        flex-direction: column;
+
+    }
+
+
+
+    @media (max-width:744px) {
+        .old{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .div-zero{
+            height: 1100px;
+        }
+        .p-centre{
+            font-size: 25px;
+        }
+        .h1-about{
+            font-size: 30px;
+        }
+        .p1-about{
+           font-size: 15px;
+            width: 600px;
+
+        }
+        .footer-wrapper{
+            height: 400px;
+        }
+        .right-map{
+          display: none;
+        }
+        .li-info{
+            font-size: 10px;
+        }
+    }
+    
+
+    @media (max-width:375px) {
+        .p-centre{
+            display: none;}
+        
+        .photozero{
+            width: 375px;
+            
+
+        }
+        .div-1{
+            width: 375px;
+            height: 500px;
+            /* background-image: none; */
+            padding-left: 0px;
+            margin-left: 0px;
+        }
+        .div1-1{
+            width: 375px;
+            height: 600px;
+          
+        }
+        
+        .p1-about{
+            width: 300px;
+            height: 700px;
+            font-size: 10px;
+        }
+
+        .p-2service{
+            font-size: 20px;
+        }
+        .sign{
+            display: block;
+        }
+        .signin{
+            height: 50px;
+
+        }
+        .footer-wrapper{
+            margin-top: 30px;
+            width: 100%;
+            height: 500px;
+        }
+        .left-footerdiv{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .div-icon{
+            display: none;
+
+        }
+        .right-map{
+            display: block;
+        }
+    }
+    
+
+   
 

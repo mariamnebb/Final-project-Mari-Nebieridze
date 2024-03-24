@@ -1,18 +1,19 @@
 "use strict";
+import{linkArray} from "./Move to"
+
+linkArray();
 
 
-let btnElement = document.getElementById('clicbtn');
+
+
+
+
+ let btnElement = document.getElementById('clicbtn');
 btnElement.addEventListener('click', function(){
     alert('მადლობა, თქვენი განაცხადი მიღებულია.')
 })
 
-// burgerbar
-let navcl = document.getElementById('nav-bar');
-let burgerbar = document.getElementById('burger-bar');
 
-burgerbar.addEventListener('click',function () {
-  navcl.classList.toggle(".activeNavcl");
-});
 
 
 
@@ -140,21 +141,21 @@ window.onclick = function(event) {
 
 //move to (npM)
 
-  const moveTo = new MoveTo();
-const linkArray = document.querySelectorAll(".atr");
+//   const moveTo = new MoveTo();
+// const linkArray = document.querySelectorAll(".atr");
 
 
-linkArray.forEach((item) => {
-  item.addEventListener("click", handleClick);
-});
+// linkArray.forEach((item) => {
+//   item.addEventListener("click", handleClick);
+// });
 
-function handleClick(e) {
-  e.preventDefault();
+// function handleClick(e) {
+//   e.preventDefault();
 
-  console.log(this); 
-  const scrollElement = document.querySelector(this.getAttribute("href"));
-  moveTo.move(scrollElement);
-}
+//   console.log(this); 
+//   const scrollElement = document.querySelector(this.getAttribute("href"));
+//   moveTo.move(scrollElement);
+// }
   
 //   validation
 const email = document.getElementById("mail");
