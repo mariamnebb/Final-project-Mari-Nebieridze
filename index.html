@@ -22,9 +22,10 @@
     <link rel="stylesheet" href="Css/media.css">
     <link rel="stylesheet" href="https://cdn.web-fonts.ge/fonts/bpg-mikheil-stefane/css/bpg-mikheil-stefane.min.css">
     <link rel="stylesheet" href="https://cdn.web-fonts.ge/fonts/alk-life/css/alk-life.min.css">
+    </head>
+    <body> 
     <!-- დავიწყე ჰედერი -->
     <Header class="header-wrapper">
-       
         <!-- logo -->
         <div class="div">
         <a href="index.html">
@@ -38,9 +39,6 @@
          
         </div>
          <!--  ნავიგაცია-->
-
-
-
          <div class="navigation">
             <nav class="navcl" id="nav-bar">
                 <ul class="nav-ul">
@@ -48,13 +46,9 @@
                     <li><a  class="atr" href="#about-section">შესახებ</a></li>
                     <li><a  class="atr" href="#service-section">სერვისები</a></li>
                     <li><a  class="atr" href="#comments-section">კომენტარები</a></li>
-                    
                 </ul>
-                
              </nav>
          </div>
-          
-        
           <!-- burger bar --> 
          
          <div class="burger-bar" id="burger-bar">
@@ -183,6 +177,25 @@
 
         </div>
     </section>
+    <div id="api"></div>
+    <section>
+      <!-- <h2>Posts</h2> -->
+      <div class="post-container" id="postMainBlock">
+        <div class="overlay" id="overlay">
+          <div class="content" id="content"></div>
+          <div class="close" id="close">X</div>
+        </div>
+
+        <div class="add-post" id="add">+</div>
+        <div class="overlay-add" id="overlay-add">
+          <form action="" id="formElement">
+            <input type="text" id="postTitle" name="title" />
+            <button>ახალი პოსტის დამატება</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    
     <footer>
         <div class="footer-wrapper">
             <div class="div-icon">
@@ -209,28 +222,8 @@
 
         </div>
     </footer>
-    <section>
-        <!-- add ajax -->
-        <!-- <h2>add posts</h2>
-        <div class="post-container" id="postMainBlock">
-          
-          <div class="overlay" id="overlay">
-            <div class="content" id="content"></div>
-            <div class="close" id="close">X</div>
-          </div>
-  
-          
-          <div class="add-post" id="add">+</div>
-          <div class="overlay-add" id="overlay-add">
-            <form action="" id="formElement">
-              <input type="text" id="postTitle" name="title" />
-              <button>ახალი პოსტის დამატება</button>
-            </form>
-          </div>
-        </div>
-      </section> -->
     
     <script src="./node_modules/moveto/dist/moveTo.min.js"></script>
-    <script type="module" src="script.js"></script>
+    <script type="module" src="script.js"></script> 
 </body>
 </html>
