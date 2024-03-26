@@ -1,6 +1,8 @@
 /* responsive 1024px; */
 
 @media(max-width:1024px){
+
+ 
     .two{flex-wrap: wrap;
         justify-content: center;
     }
@@ -40,6 +42,22 @@
 
 
     @media (max-width:744px) {
+        .burgerbar{
+            display: block;
+        }
+        .navcl{
+            display: none;
+        }
+        .navigation{
+            flex-direction: column;
+        }
+        .nav-ul{
+            flex-direction: column;
+            align-items: center;
+        }
+        .navcl.activenav{
+            display: block;
+        }
         .old{
             flex-wrap: wrap;
             justify-content: center;

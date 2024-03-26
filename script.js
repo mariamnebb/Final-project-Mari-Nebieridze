@@ -3,6 +3,10 @@
 
 import{email} from "./validation.js"
 email();
+import { navcl } from "./burger.js"
+nav-bar();
+import { burgerbar } from "./burger.js"
+burger-bar();
 
 
 
@@ -14,6 +18,15 @@ btnElement.addEventListener('click', function(){
     alert('მადლობა, თქვენი განაცხადი მიღებულია.')
 })
 
+// // burgerbar
+// let navcl = document.getElementById('nav-bar');
+// let burgerbar = document.getElementById('burger-bar');
+
+// burgerbar.addEventListener('click', function() {
+//   navcl.classList.add('activenav')
+
+  
+// })
 
 
 
