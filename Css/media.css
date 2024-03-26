@@ -55,7 +55,7 @@
             flex-direction: column;
             align-items: center;
         }
-        .navcl.activenav{
+        .navcl.active{
             display: block;
         }
         .old{

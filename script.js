@@ -148,3 +148,4 @@ form.addEventListener("submit", function (event) {
       createPost(newObj);
     });
 });
+
