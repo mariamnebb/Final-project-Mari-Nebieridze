@@ -33,7 +33,7 @@ btnElement.addEventListener('click', function(){
 // }
 
 
-// variables
+// variables ajax
 let mainDiv = document.getElementById("postMainBlock");
 let postOverLay = document.getElementById("overlay");
 let contentDiv = document.getElementById("content");
@@ -166,4 +166,20 @@ function validateForm() {
 function validateEmail(email) {
   let re = /\S+@\S+\.\S+/;
   return re.test(email);
+}
+// mOVE TO NPm
+const moveTo = new MoveTo();
+const linkArray = document.querySelectorAll(".atr");
+
+
+linkArray.forEach((item) => {
+  item.addEventListener("click", handleClick);
+});
+
+function handleClick(e) {
+  e.preventDefault();
+
+  console.log(this); 
+  const scrollElement = document.querySelector(this.getAttribute("href"));
+  moveTo.move(scrollElement);
 }
