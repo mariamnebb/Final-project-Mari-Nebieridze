@@ -1,12 +1,10 @@
 "use strict";
 
 
-import{email} from "./validation.js"
-email();
+
 import { navcl } from "./burger.js"
-nav-bar();
 import { burgerbar } from "./burger.js"
-burger-bar();
+
 
 
 
@@ -18,29 +16,21 @@ btnElement.addEventListener('click', function(){
     alert('მადლობა, თქვენი განაცხადი მიღებულია.')
 })
 
-// // burgerbar
-// let navcl = document.getElementById('nav-bar');
-// let burgerbar = document.getElementById('burger-bar');
 
-// burgerbar.addEventListener('click', function() {
-//   navcl.classList.add('activenav')
-
-  
-// })
 
 
 
 
 
 // Get the modal
-let modal = document.getElementById('id01');
+// let modal = document.getElementById('id01');
 
 
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
+// window.onclick = function(event) {
+//     if (event.target == modal) {
+//         modal.style.display = "none";
+//     }
+// }
 
 
 // variables
@@ -149,3 +139,31 @@ form.addEventListener("submit", function (event) {
     });
 });
 
+function validateForm() {
+    
+  let name = document.getElementById('name').value;
+  let email = document.getElementById('email').value;
+  
+  // Check if name is empty
+  if (name.trim() === '') {
+    alert('Please enter your name');
+    return false; 
+  }
+  
+ 
+  if (email.trim() === '') {
+    alert('Please enter your email');
+    return false; 
+  } else if (!validateEmail(email)) {
+    alert('Please enter a valid email address');
+    return false; 
+  }
+  
+  // If all validations pass, return true to allow form submission
+  return true;
+}
+
+function validateEmail(email) {
+  let re = /\S+@\S+\.\S+/;
+  return re.test(email);
+}
