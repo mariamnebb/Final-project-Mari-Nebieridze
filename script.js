@@ -49,36 +49,7 @@ function ajax() {
 }
 
 ajax();
-// ვალიდაცია
 
-function validateForm() {
-    
-  let name = document.getElementById('name').value;
-  let email = document.getElementById('email').value;
-  
-  // Check if name is empty
-  if (name.trim() === '') {
-    alert('Please enter your name');
-    return false; 
-  }
-  
- 
-  if (email.trim() === '') {
-    alert('Please enter your email');
-    return false; 
-  } else if (!validateEmail(email)) {
-    alert('Please enter a valid email address');
-    return false; 
-  }
-  
-  // If all validations pass, return true to allow form submission
-  return true;
-}
-
-function validateEmail(email) {
-  let re = /\S+@\S+\.\S+/;
-  return re.test(email);
-}
 // mOVE TO NPm
 let moveTo = new MoveTo();
 let linkArray = document.querySelectorAll(".atr");
@@ -95,3 +66,116 @@ function handleClick(e) {
   const scrollElement = document.querySelector(this.getAttribute("href"));
   moveTo.move(scrollElement);
 }
+
+
+let form = document.getElementById("formelement");
+
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  let errors = {};
+
+  //username
+  let usernameValue = document.getElementById("usernamefield").value;
+ 
+
+  if (usernameValue.length < 4) {
+    errors.username = "ყველა ველი უნდა იყოს შევსებული";
+  }
+
+  if (usernameValue == "") {
+    errors.username = "ყველა ველი უნდა იყოს შევსებული";
+  }
+
+  // password
+  let passwordValue1 = document.getElementById("passwordfield").value;
+  let passwordValue2 = document.getElementById("passwordfiled2").value;
+
+  if (passwordValue1 == "") {
+    errors.passw = "პაროლი არ უნდა იყოს ცარიელი";
+  }
+  if (passwordValue1 != passwordValue2) {
+    errors.passw2 = "პაროლი არ ემთხვევა ერთმანეთს";
+  }
+
+  // radio
+  let gender = false;
+  let radioElements = this.querySelectorAll('[name="gender"]');
+  radioElements.forEach((item) => {
+    if (item.checked) {
+      gender = true;
+    }
+  });
+
+  if (!gender) {
+    errors.gender = "გთხოვთ აირჩიოთ სქესი";
+  }
+
+  //checkbox
+  let checkBoxAgree = document.getElementById("checkfield").checked;
+  if (!checkBoxAgree) {
+    errors.agree = "უნდა დაეთანხმოთ წესებსა და პირობებს";
+  }
+
+  console.log(errors);
+
+  this.querySelectorAll(".error-text").forEach((el) => {
+    el.textContent = " ";
+  });
+
+  for (let item in errors) {
+    console.log(item); //key
+
+    let errorTextElement = document.getElementById("error_" + item);
+    console.log(errorTextElement);
+
+    if (errorTextElement) {
+      errorTextElement.textContent = errors[item];
+    }
+  }
+
+  if (Object.keys(errors).length === 0) {
+    this.submit();
+  }
+});
+
+
+
+// show hide password
+let passw = document.getElementById("passwordfield");
+let icon = document.getElementById("toggleIcon");
+
+icon.addEventListener("click", function () {
+  if (passw.type == "password") {
+    passw.setAttribute("type", "text");
+    icon.classList.remove("fa-eye");
+    icon.classList.add("fa-eye-slash");
+  } else {
+    passw.setAttribute("type", "password");
+    icon.classList.remove("fa-eye-slash");
+    icon.classList.add("fa-eye");
+  }
+});
+
+// email regex
+let email = document.getElementById("emailfield");
+
+function validation() {
+  let emailValue = document.getElementById("emailfield").value;
+  let textError = document.getElementById("error-email");
+  let emailPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+  if (emailPattern.test(emailValue)) {
+    textError.textContent = "Your Email is valid";
+    textError.style.color = "green";
+  } else {
+    textError.textContent = "Your Email is invalid";
+    textError.style.color = "red";
+  }
+
+  if (emailValue == "") {
+    textError.innerHTML = " ";
+  }
+}
+
+email.addEventListener("keyup", validation);
